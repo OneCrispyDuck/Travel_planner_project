@@ -1,4 +1,17 @@
+# WELCOME GROUP MATES! 
+
+~ Welcome group mates! This is a private repository that is only accessible via invite. Once you've been invited you can synce your local PC with the contents of the files here via the GitHub desktop version of this repository. You need to sync and it should download into your local disk on your personal computer.
+Once synced with your GitHub Desktop you can locate the file within your local PC by clicking: repositories < show in your File Manager (or press CTRL+SHIFT+F) and it will pop up on your PC. You may choose to relocate the file somehwere more convinent for you if you with, just be sure to re-sync your GitHub desktop with the location you've placed our project foler in.
+
+Note: If you create a new folder or upload a file within any of the directories within our project it will appear in everyone's local folder once you decide to 'push & commit' to our project repository. Be sure to read the .txt within your designated folder.
+
+##Please dont be discouraged if this is all a bit overwhelming to you, it may seem difficult to understand at first, but it will easier once you get the hang of using GitHub with a team! If you have any question on how to use this space ~ Shoot Joseph a message and he will schedule a discord call with you and screen share how to set up! 
+
+Good luck everyone and have fun!!
+
+
 # Travel_planner_project
+
 A user-friendly travel planner web application that generates a travel itinerary in .pdf file format
 
 
