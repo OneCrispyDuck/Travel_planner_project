@@ -1,7 +1,7 @@
 # WELCOME GROUP MATES! 
 
-~ Welcome group mates! This is a private repository that is only accessible via invite. Once you've been invited you can synce your local PC with the contents of the files here via the GitHub desktop version of this repository. You need to sync and it should download into your local disk on your personal computer.
-Once synced with your GitHub Desktop you can locate the file within your local PC by clicking: repositories < show in your File Manager (or press CTRL+SHIFT+F) and it will pop up on your PC. You may choose to relocate the file somehwere more convinent for you if you with, just be sure to re-sync your GitHub desktop with the location you've placed our project foler in.
+~ Welcome group mates! This is a private repository that is only accessible via invite. Once you've been invited you can synce your local PC with the contents of the files here via the GitHub desktop version of this repository. You need to sync and it should download into your local directories on your personal computer.
+Once synced with your GitHub Desktop you can locate the file within your local PC by clicking: repositories < show in your File Manager (or press CTRL+SHIFT+F) and it will pop up on your PC. You may choose to relocate the file somehwere more convinent for you within your personal directories if you wish, just be sure to press 're-sync' on your GitHub desktop with the directory location you've placed our project foler in on your local PC.
 
 Note: If you create a new folder or upload a file within any of the directories within our project it will appear in everyone's local folder once you decide to 'push & commit' to our project repository. Be sure to read the .txt within your designated folder.
 
