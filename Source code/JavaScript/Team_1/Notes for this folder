@@ -9,3 +9,13 @@ As you will be working in pairs with a partner ~
 THIS FOLDER IS FOR:
 - JOSEPH 
 - ZED
+
+Task: PDF Generation
+- Writing a function to convert the user’s travel plan into a PDF file:
+    - Use a JavaScript library like jsPDF to create a new PDF document.
+    - Add the user’s travel plan to the PDF document.
+    - Save the PDF document.
+
+- Implementing a feature to hide personal information in the PDF for privacy:
+    - Write a function to remove or replace personal information in the travel plan.
+    - Call this function before adding the travel plan to the PDF document.
