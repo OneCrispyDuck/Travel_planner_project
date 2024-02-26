@@ -10,7 +10,7 @@ THIS FOLDER IS FOR:
 - JOSEPH 
 - ZED
 
-Task: PDF Generation
+Task: PDF Generation (JavaScript & UX Design)
 - Writing a function to convert the user’s travel plan into a PDF file:
     - Use a JavaScript library like jsPDF to create a new PDF document.
     - Add the user’s travel plan to the PDF document.
@@ -19,3 +19,11 @@ Task: PDF Generation
 - Implementing a feature to hide personal information in the PDF for privacy:
     - Write a function to remove or replace personal information in the travel plan.
     - Call this function before adding the travel plan to the PDF document.
+
+UX Design: PDF Generation
+    - Designing the layout of the PDF
+    - Deciding on the placement of information in the PDF
+
+
+
+Hello 
