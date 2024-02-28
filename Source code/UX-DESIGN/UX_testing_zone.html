@@ -1,8 +1,41 @@
 <!DOCTYPE html>
 <head>
-
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <style>
+        body{
+            background-color: #6935D4
+        }
+        input{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1> HTML File of EzGo</h1>
+    <div style="background-color: #fff; width: 97%; height: 94vh; transform: translateY(2%); margin:0 auto;"> <!-- White background Container--><br>
+        <div> <!--About Us Button-->
+            <a href="another.html" style="display:inline; color: #000; float: right; width: 7%;margin-right: 2%; background-color: #6935D4; color: #fff; text-align: center; font-family: Inter; border-radius: 4px;text-decoration:none">TRY ME</a> 
+            <a href="another.html" style="display:inline; color: #000; float:right; width: 9%;margin-right: 2%; background-color: #6935D4; color: #fff; text-align: center; font-family: Inter; border-radius: 4px;text-decoration:none">ABOUT US</a> 
+        </div><br><br>
+        <div><!--Logo-->
+            <img src="Logo.png" alt="logo" style="display: block;height: 30%; width: 33%; margin-left: auto; margin-right: auto; padding-top: 3%;">
+        </div>
+        <div> <!--Date Picker-->
+            <form name="datePicker">
+                <label style="float: left;margin-left: 32%;margin-top:5%; font-size: 11px; font-family: Inter ;">FROM</label>
+                <input type="text" name="departureDate" placeholder="2024.02.23" style="width:14%; border:none; border-bottom: 1px solid #000;padding-top: 8%; margin-left: 1%">
+                <label style="float:right;font-size: 11px;margin-right:32%;margin-top:5%;font-family:Inter;">TO</label>
+                <input type="text" name="arrivalDate" placeholder="2024.03.05" style="display:inline-block; width:14%; border:none; border-bottom: 1px solid #000;margin-left: auto; margin-right: auto; padding-top: 2%;">
+            </form>
+        </div><br><br><br>
+        <div><!--Start button-->
+            <a href="startHTML.html" style="display:inline-block; width:20%;border-radius:30px; padding:15px 0 15px 0; background-color:#6935D4; transform: translate(200%, 0); color:white; font-family:Inter; font-size: large; text-align: center;">Start</a>
+        </div>
+
+        <div><!--Try Me Button-->
+        </div><br><br>
+        <div><!--Help Button that links to another to help page-->
+            <a href="another.html" style="display:flex; color: #000; justify-content: space-around;">Help</a> 
+        </div>
+    </div>
 </body>
 </html>
