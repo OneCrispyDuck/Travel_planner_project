@@ -3,7 +3,11 @@ body{
 }
 input{
     text-align: center;
-    font-family: Intra;
+    font-family: Inter;
+    font-size: 90%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .bg{
@@ -31,7 +35,7 @@ img{
     height:60%;
     border: 1px solid #ababab;
     transform: translate(20%, -44%);
-    border-radius: 25px;
+    border-radius: 5%/1%;
 }
 
 .wrapper{
@@ -51,7 +55,7 @@ img{
     padding: 0px;
     width: auto;
     font-size: 12px;
-    font-family: Intra;
+    font-family: Inter;
     color: #8d8b8b;
 }
 
@@ -62,15 +66,21 @@ img{
     width: 90%;
     margin: 10px;
     line-height: 6ex;
-    font-family: Intra;
+    font-family: Inter;
     color: #8d8b8b;
 }
 
 .formButton{
     background-color: #6935D4;
     color: white;
-    font-family: Intra;
-    border-radius: 10px;
+    font-family: Inter;
     width:150%;
     height:200%;
+    border-radius: 14px;
+}
+
+.horizontal{
+    position:absolute; 
+    width: 3.7%; 
+    border: solid 0.5px #ababab;
 }
