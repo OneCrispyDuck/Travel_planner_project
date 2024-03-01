@@ -13,7 +13,7 @@ input{
 .bg{
     background-color: #fff; 
     width: 97%; 
-    height:  auto; 
+    height:590px; 
     transform: translateY(2%); 
     margin:0 auto;
 }
@@ -30,13 +30,17 @@ img{
     text-decoration: none;
 }
 
+#container{
+    background-color: white;
+}
 .rectangle{
-    position: relative;
+    position: flex;
     width:80%;
-    height:60%;
+    height:auto;
     border: 1px solid #ababab;
     transform: translate(20%, -60%);
     border-radius: 5%/15%;
+    background-color: #fff;
 }
 
 .wrapper{
