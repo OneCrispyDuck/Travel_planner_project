@@ -46,7 +46,7 @@ img{
 .wrapper{
     border: 1px solid #ababab;
     position: relative;
-    border-radius: 5%/15%;
+    border-radius: 10px;
 
 }
 
@@ -72,6 +72,7 @@ img{
     line-height: 6ex;
     font-family: Inter;
     color: #8d8b8b;
+    background-color: white;
 }
 
 .formButton{

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'> <!--Font-->
-    <link rel = "stylesheet" type="text/css" href = "itinerary.css">
+    <link rel = "stylesheet" type="text/css" href = "day1.css">
 </head>
 <body>
     <div > <!--Header Div-->
@@ -29,35 +29,35 @@
 		</div>
         <div><!--plus button-->
             <button style="position: absolute; border-radius: 50%;font-size:150%; margin-left:6.5%; color: #969393; background-color: #fff; width: 3%; height:6%">+</button>
-        </div><hr class="horizontal" style="margin-left:12.3%; margin-top:-10%">
+        </div><hr class="horizontal" style="margin-left:12.3%; margin-top:-3%">
 		<div id="container">
 			<div id="rectangle" class="rectangle"> <!--Details-->
-				<form name="travelDetails">
+				<form name="Day Planner">
 					<div>
-						<div class="wrapper" style= "display: inline-block; margin-top:4%; margin-left:6%; width: 13%;"> 
-						<label name="transportMode" class="label"> Transport </label>
-						<select id="select" name="transportMode">
-							<option value="Options">Select</option>
-							<option value="flight">Flight</option>
-							<option value="train">Train</option>
-							<option value="car">Car</option>
-							<option value="ferry">Ferry</option>
-							<option value="helicopter">Helicopter</option>
-						</select>
+						<div class="wrapper" style= "display: inline-block; margin-top:4%; margin-left:6%; width: 25%; height:40px"> 
+                            <label name="city" class="label"> City </label>
+                            <input type="text" placeholder="E.g. Hong Kong" style="margin-left:3%; margin-top:2%; border: none; width: 90%; height: 80%; color:#8d8b8b;" >
 						</div>
-						<div style="display: inline-block; ">
-							<input type="text" placeholder="Flight Number:" style="text-align: left;margin-left:70%; margin-top:0%; border: none; width: 200px; height: 38px; color:#8d8b8b; border: 1px solid #ababab; border-radius: 10px; padding-left: 20px;"> 
-						</div> 
+						<div class="wrapper" style= "display: inline-block; margin-top:4%; margin-left:6%; width: 25%; height:40px"> 
+                            <label name="timeZone" class="label"> Time Zone </label>
+                            <input type="text" placeholder="E.g. GMT+1" style="margin-left:3%; margin-top:2%; border: none; width: 90%; height: 80%; color:#8d8b8b;" >
+						</div>
 					</div>
+                    
+                    <hr style="border: 1px solid #969393 ;">
+
 					<div>
-						<div class="wrapper" style= "display: inline-block;margin-top:4%; margin-left:6%; height: 60px; width: 30%">
-							<label name="departLocation" class="label"> Depart </label>
-							<input type="text" placeholder="E.g. Hong Kong International Airport..." style="margin-left:3%; margin-top:2%; border: none; width: 90%; height: 80%; color:#8d8b8b;" >
+						<div class="wrapper" style= "display: inline-block;margin-top:2%; margin-left:6%; height: 60px; width: 30%">
+							<label name="hotel" class="label"> Hotel </label>
+							<input type="text" placeholder="E.g. Shangrila Hotel" style="margin-left:3%; margin-top:2%; border: none; width: 90%; height: 80%; color:#8d8b8b;" >
 						</div>
-						<div style="display: inline-block; ">
-							<label name="departLocation" style="display: inline-block; position:relative; margin-left:60%; transform: translateY(60%);" class="label"> Take-off </label>
-							<input type="datetime-local" value="Take-off" style="display:inline;text-align: left;margin-left:60%; border: none; width: 200px; height: 38px; color:#8d8b8b; border: 1px solid #ababab; border-radius: 10px; padding-left: 20px;"> 
-						</div> 
+                        <div class="wrapper" style= "display: inline-block; margin-top:4%; margin-left:6%; width: 25%; height:40px"> 
+                            <select id="select" name="breakfast">
+                                <option value="Options">Select</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+						</div>
 					</div>
 					<div>
 					<div class="wrapper" style= "display:inline-block;margin-top:4%; margin-left:6%; height: 60px; width: 30%">
@@ -71,14 +71,14 @@
 					</div><br>
 				</form>
 			</div>
-        </div>
+        </div><!--
         <div style="display:inline-flex; float: right; width:60%; height:90px; position: relative;">
-            <div style="width:auto; height:50%; margin-left:60%; margin-top:-23%;position: relative; "> <!--Add More Button-->
+            <div style="width:auto; height:50%; margin-left:60%; margin-top:-23%;position: relative; "> /Add More Buttom
                 <button onclick="cloneDetails();"style="position:relative" class="formButton">Add More</button>
             </div>
-            <div style="width:10%; height:50%; margin-left:8%; margin-top:-23%;position: relative; "> <!--Finish Button-->
+            <div style="width:10%; height:50%; margin-left:8%; margin-top:-23%;position: relative; "> /Finish Button
                 <button style="position:relative" class="formButton">Finish</button>
-            </div>
+            </div>-->
 			<div> <!--Quit-->
 				<a href="homePage.html" style="margin-left:95%;">Quit</a>
 			</div>
