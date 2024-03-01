@@ -13,7 +13,7 @@ input{
 .bg{
     background-color: #fff; 
     width: 97%; 
-    height: 85vh; 
+    height:  auto; 
     transform: translateY(2%); 
     margin:0 auto;
 }
@@ -30,19 +30,19 @@ img{
     text-decoration: none;
 }
 
-#rectangle{
+.rectangle{
+    position: relative;
     width:80%;
     height:60%;
     border: 1px solid #ababab;
-    transform: translate(20%, -44%);
-    border-radius: 5%/1%;
+    transform: translate(20%, -60%);
+    border-radius: 5%/15%;
 }
 
 .wrapper{
-
     border: 1px solid #ababab;
     position: relative;
-    border-radius: 10px;
+    border-radius: 5%/15%;
 
 }
 
@@ -61,10 +61,10 @@ img{
 
 #select{
     border: none;
-    border-radius: 6px;
+    border-radius: 5%/15%;
     position: relative;
     width: 90%;
-    margin: 10px;
+    margin: 8%;
     line-height: 6ex;
     font-family: Inter;
     color: #8d8b8b;
@@ -75,12 +75,21 @@ img{
     color: white;
     font-family: Inter;
     width:150%;
-    height:200%;
-    border-radius: 14px;
+    height:100%;
+    border-radius: 20%/40%;
 }
 
 .horizontal{
     position:absolute; 
     width: 3.7%; 
     border: solid 0.5px #ababab;
+}
+
+.daysButton{
+    background-color: white;
+    color: #969393;;
+    font-family: Inter;
+    width:150%;
+    height:200%;
+    border-radius: 10%/10%;
 }
