@@ -13,14 +13,15 @@ input{
 .bg{
     background-color: #fff; 
     width: 97%; 
-    height:590px; 
+    height: auto; 
     transform: translateY(2%); 
     margin:0 auto;
+    position: relative;;
 }
 
 img{
     display: inline;
-    width: 13%;
+    width: 15%;
     margin-left: 2%;
 }
 
@@ -31,22 +32,24 @@ img{
 }
 
 #container{
-    background-color: white;
+    width: 97%;
+
 }
 .rectangle{
-    position: flex;
+    display: flex;
     width:80%;
-    height:auto;
+    height: 500px;
+    overflow: scroll;
     border: 1px solid #ababab;
-    transform: translate(20%, -60%);
+    transform: translate(20%, -30%);
     border-radius: 5%/15%;
-    background-color: #fff;
+    
 }
 
 .wrapper{
     border: 1px solid #ababab;
     position: relative;
-    border-radius: 10px;
+    border-radius: 5%/15%;
 
 }
 
@@ -63,7 +66,7 @@ img{
     color: #8d8b8b;
 }
 
-#select{
+#selectBreakfast1{
     border: none;
     border-radius: 5%/15%;
     position: relative;
@@ -86,7 +89,7 @@ img{
 
 .horizontal{
     position:absolute; 
-    width: 3.7%; 
+    width: 3.2%; 
     border: solid 0.5px #ababab;
 }
 
