@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: lightgrey;
+    }
+
+    .box {
+      position: absolute;
+      top: 10%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+    }
+
+    .steps {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: 400px;
+    }
+
+    .step {
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      transition: background 0.5s;
+      position: relative;
+    }
+
+    .step.selected {
+      border: 3px solid #fff;
+    }
+
+    .step.completed {
+      border: 3px solid #008000;
+      background: #008000;
+    }
+
+    .step-label {
+      position: absolute;
+      top: 30px;
+      left: -15px;
+      font-size: 12px;
+      text-align: center;
+      width: 50px;
+    }
+
+    .progress {
+      position: absolute;
+      width: 100%;
+      height: 15%;
+      border-bottom: 2px solid #fff;
+      z-index: -1;
+    }
+
+    .percent {
+      position: absolute;
+      width: 0;
+      height: 100%;
+      border-bottom: 2px solid #008000;
+      z-index: 1;
+      transition: width 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="progress">
+      <div class="percent"></div>
+    </div>
+    <div class="steps">
+      <div class="step" id="0">
+        <div class="step-label">Timeset</div>
+      </div>
+      <div class="step" id="1">
+        <div class="step-label">Travelset</div>
+      </div>
+      <div class="step" id="2">
+        <div class="step-label">Ready to share</div>
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <button id="previousBtn" onclick="previousStep()" disabled>Previous</button>
+    <button id="nextBtn" onclick="nextStep()">Next</button>
+  </div>
+
+
+  <script>
+    let els = document.getElementsByClassName('step');
+    let steps = [];
+    let currentStep = 0;
+    Array.prototype.forEach.call(els, (e) => {
+      steps.push(e);
+    });
+
+    function nextStep() {
+      if (currentStep < steps.length - 1) {
+        progress(currentStep + 1);
+        currentStep++;
+        document.getElementById('previousBtn').disabled = false;
+      } else if (currentStep === steps.length - 1) {
+        progress(currentStep + 1);
+        currentStep++;
+        document.getElementById('nextBtn').disabled = true;
+      }
+    }
+
+    function previousStep() {
+      if (currentStep > 0) {
+        progress(currentStep - 1);
+        currentStep--;
+        document.getElementById('nextBtn').disabled = false;
+      } else if (currentStep === 0) {
+        progress(currentStep);
+        document.getElementById('previousBtn').disabled = true;
+      }
+    }
+
+    function progress(stepNum) {
+      let totalWidth = 400;
+      let p = ((stepNum-1) / (steps.length - 1)) * totalWidth;
+      document.getElementsByClassName('percent')[0].style.width = `${p}px`;
+      steps.forEach((e) => {
+     if (e.id === stepNum.toString()) {
+       e.classList.add('selected');
+       e.classList.remove('completed');
+     }
+     if (e.id < stepNum) {
+       e.classList.add('completed');
+    }
+     if (e.id > stepNum) {
+       e.classList.remove('selected', 'completed');
+    }
+  });
+}
+
+  </script>
+</body>
+</html>

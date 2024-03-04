@@ -100,3 +100,63 @@ img{
     height:200%;
     border-radius: 10%/10%;
 }
+
+
+.box {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+  .steps {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+  }
+
+  .step {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    transition: background 0.5s;
+    position: relative;
+  }
+
+  .step.selected {
+    border: 3px solid #fff;
+  }
+
+  .step.completed {
+    border: 3px solid #008000;
+    background: #008000;
+  }
+
+  .step-label {
+    position: absolute;
+    top: 30px;
+    left: -15px;
+    font-size: 12px;
+    text-align: center;
+    width: 50px;
+  }
+
+  .progress {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    border-bottom: 2px solid #fff;
+    z-index: -1;
+  }
+
+  .percent {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid #008000;
+    z-index: 1;
+    transition: width 0.5s;
+  }

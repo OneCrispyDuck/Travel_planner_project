@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'> <!--Font-->
-    <link rel = "stylesheet" type="text/css" href = "days.css">
+    <link rel = "stylesheet" type="text/css" href = "finalCSS/days.css">
 </head>
 <body>
     <div > <!--Header Div-->
@@ -173,15 +173,17 @@
 							<input id="notes1" placeholder="Be aware of weather" type="text" style="margin-left:1%; margin-top:2%; border: none; width: 90%; height: 50%; color:#8d8b8b;" >
 						</div> 
 					</div>
+					<div style="display:inline-flex; float: right; width:60%; height:90px; position: relative;">
+						<div style="width:auto; height:50%; margin-left:70%; margin-top:3%;position: relative; "> <!--Add More Button-->
+							<button onclick="cloneDetails();"style="position:relative" class="formButton">Add More Places</button>
+						</div>
+					</div>
 				</form>
 			</div>
         </div>
         <div style="display:inline-flex; float: right; width:60%; height:90px; position: relative;">
-            <div style="width:auto; height:50%; margin-left:60%; margin-top:-15%;position: relative; "> <!--Add More Button-->
-                <button onclick="cloneDetails();"style="position:relative" class="formButton">Add More</button>
-            </div>
-            <div style="width:10%; height:50%; margin-left:8%; margin-top:-15%;position: relative; "> <!--Finish Button-->
-                <a href="days.html"><button style="position:relative" class="formButton">Finish</button></a>
+            <div style="width:10%; height:50%; margin-left:80%; margin-top:-15%;position: relative; "> <!--Finish Button-->
+                <a href="days.html"><button style="position:relative" class="formButton">Finish</button></a> <!--Move to day 2-->
             </div>
         </div>
         <div> <!--Quit-->
@@ -246,4 +248,3 @@
 </script>
 </html>
 
-<!--hihi comment testing penn-->
