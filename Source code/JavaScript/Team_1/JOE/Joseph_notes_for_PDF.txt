@@ -1,0 +1,44 @@
+Please note that this is a simplified example. In a real-world application, you would need to set up event listeners to capture user input from form fields or other input elements on your web page. Also, the jsPDF library needs to be included in your project to generate PDF files. You can find more about it here.
+
+//TO-DO-LIST:
+
+#Event listeners
+- To capture user input from dields or other input elements from our webpage.
+- An event listener is a procedure in JavaScript that waits for an event to occur, like a click or a keypress.
+
+Example of event listeners:
+
+"""
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    // Prevent the form from submitting normally
+    event.preventDefault();
+
+    // Get the input value
+    let inputValue = document.getElementById('myInput').value;
+
+    // Handle the input
+    handleUserInput(inputValue);
+});
+"""
+
+
+#jsPDF Library
+- A JavaScript library for generatign PDF files
+-Include it in our project by adding a <script> tag to your HTML file, like so:
+
+"""
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+"""
+
+Use the jsPDF object in JavaScript code to create PDFs. Example:
+
+"""
+
+let doc = new jsPDF();
+doc.text('Hello world!', 10, 10);
+doc.save('a4.pdf');
+
+
+"""
+
+
