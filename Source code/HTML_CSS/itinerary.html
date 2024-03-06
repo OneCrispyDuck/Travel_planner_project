@@ -54,7 +54,7 @@
 					<div>
 						<div class="wrapper" style= "display: inline-block; margin-top:4%; margin-left:6%; width: 30%"> 
 						<label name="transportMode" class="label"> Transport </label>
-						<select id="selectTransportMode1" name="transportMode">
+						<select id="selectTransportMode0" name="transportMode">
 							<option value="Options">Select</option>
 							<option value="flight">Flight</option>
 							<option value="train">Train</option>
@@ -64,67 +64,27 @@
 						</select>
 						</div>
 						<div style="display: inline-block; ">
-							<input id="flightNum1" type="text" placeholder="Flight Number:" style="text-align: left;margin-left:70%; margin-top:0%; border: none; width: 200px; height: 38px; color:#8d8b8b; border: 1px solid #ababab; border-radius: 10px; padding-left: 20px;"> 
+							<input id="flightNum0" type="text" placeholder="Flight Number:" style="text-align: left;margin-left:70%; margin-top:0%; border: none; width: 200px; height: 38px; color:#8d8b8b; border: 1px solid #ababab; border-radius: 10px; padding-left: 20px;"> 
 						</div> 
 					</div>
 					<div>
 						<div class="wrapper" style= "display: inline-block;margin-top:4%; margin-left:6%; height: 60px; width: 30%">
 							<label name="departLocation" class="label"> Depart </label>
-							<input id="departLocation1" type="text" placeholder="E.g. Hong Kong International Airport..." style="margin-left:3%; margin-top:2%; border: none; width: 90%; height: 80%; color:#8d8b8b;" >
+							<input id="departLocation0" type="text" placeholder="E.g. Hong Kong International Airport..." style="margin-left:3%; margin-top:2%; border: none; width: 90%; height: 80%; color:#8d8b8b;" >
 						</div>
 						<div style="display: inline-block; ">
 							<label name="departTime" style="display: inline-block; position:relative; margin-left:60%; transform: translateY(60%);" class="label"> Take-off </label>
-							<input id="departTime1" type="datetime-local" value="Take-off" style="display:inline;text-align: left;margin-left:60%; border: none; width: 200px; height: 38px; color:#8d8b8b; border: 1px solid #ababab; border-radius: 10px; padding-left: 20px;"> 
+							<input id="departTime0" type="datetime-local" value="Take-off" style="display:inline;text-align: left;margin-left:60%; border: none; width: 200px; height: 38px; color:#8d8b8b; border: 1px solid #ababab; border-radius: 10px; padding-left: 20px;"> 
 						</div> 
 					</div>
 					<div>
 					<div class="wrapper" style= "display:inline-block;margin-top:4%; margin-left:6%; height: 60px; width: 30%">
 						<label name="arriveLocation" class="label"> Arrive </label>
-						<input id="arriveLocation1" type="text" placeholder="E.g. Heathrow International Airport..." style="margin-left:3%; margin-top:2%; border: none; width: 90%; height: 80%; color:#8d8b8b;" >
+						<input id="arriveLocation0" type="text" placeholder="E.g. Heathrow International Airport..." style="margin-left:3%; margin-top:2%; border: none; width: 90%; height: 80%; color:#8d8b8b;" >
 					</div>
 					<div style="display: inline-block; ">
 						<label name="arriveTime" style="display: inline-block; position:relative; margin-left:65%; transform: translateY(60%);" class="label"> Land </label>
-						<input id="arriveTime1" type="datetime-local" id="Land" value="Land" style="display:inline;text-align: left;margin-left:64%; border: none; width: 200px; height: 38px; color:#8d8b8b; border: 1px solid #ababab; border-radius: 10px; padding-left: 20px;"> 
-					</div> 
-					</div><br>
-				</form>
-			</div>
-			<div id="rectangle1" class="rectangle" style="display: inline-block;"> <!--Details-->
-				<form name="travelDetails">
-					<div>
-						<div class="wrapper" style="display: inline-block; margin-top:4%; margin-left:6%; width: 13%;"> 
-						<label name="transportMode" class="label"> Transport </label>
-						<select id="selectTransportMode1" name="transportMode">
-							<option value="Options">Select</option>
-							<option value="flight">Flight</option>
-							<option value="train">Train</option>
-							<option value="car">Car</option>
-							<option value="ferry">Ferry</option>
-							<option value="helicopter">Helicopter</option>
-						</select>
-						</div>
-						<div style="display: inline-block; ">
-							<input id="flightNum1" type="text" placeholder="Flight Number:" style="text-align: left;margin-left:70%; margin-top:0%; border: none; width: 200px; height: 38px; color:#8d8b8b; border: 1px solid #ababab; border-radius: 10px; padding-left: 20px;"> 
-						</div> 
-					</div>
-					<div>
-						<div class="wrapper" style= "display: inline-block;margin-top:4%; margin-left:6%; height: 60px; width: 30%">
-							<label name="departLocation" class="label"> Depart </label>
-							<input id="departLocation1" type="text" placeholder="E.g. Hong Kong International Airport..." style="margin-left:3%; margin-top:2%; border: none; width: 90%; height: 80%; color:#8d8b8b;" >
-						</div>
-						<div style="display: inline-block; ">
-							<label name="departTime" style="display: inline-block; position:relative; margin-left:60%; transform: translateY(60%);" class="label"> Take-off </label>
-							<input id="departTime1" type="datetime-local" value="Take-off" style="display:inline;text-align: left;margin-left:60%; border: none; width: 200px; height: 38px; color:#8d8b8b; border: 1px solid #ababab; border-radius: 10px; padding-left: 20px;"> 
-						</div> 
-					</div>
-					<div>
-					<div class="wrapper" style= "display:inline-block;margin-top:4%; margin-left:6%; height: 60px; width: 30%">
-						<label name="arriveLocation" class="label"> Arrive </label>
-						<input id="arriveLocation1" type="text" placeholder="E.g. Heathrow International Airport..." style="margin-left:3%; margin-top:2%; border: none; width: 90%; height: 80%; color:#8d8b8b;" >
-					</div>
-					<div style="display: inline-block; ">
-						<label name="arriveTime" style="display: inline-block; position:relative; margin-left:65%; transform: translateY(60%);" class="label"> Land </label>
-						<input id="arriveTime1" type="datetime-local" id="Land" value="Land" style="display:inline;text-align: left;margin-left:64%; border: none; width: 200px; height: 38px; color:#8d8b8b; border: 1px solid #ababab; border-radius: 10px; padding-left: 20px;"> 
+						<input id="arriveTime0" type="datetime-local" id="Land" value="Land" style="display:inline;text-align: left;margin-left:64%; border: none; width: 200px; height: 38px; color:#8d8b8b; border: 1px solid #ababab; border-radius: 10px; padding-left: 20px;"> 
 					</div> 
 					</div><br>
 				</form>
@@ -146,8 +106,10 @@
 </body>
 <script src="../JavaScript/Team_2/itinerary.js"></script>
 <script>
-	let detailBoxCount = 1
+	let detailBoxCount = 0;
 	
+	cloneDetails();
+
 	function checkLand(){
 		console.log(document.getElementById("Land").value);
 		}
@@ -155,8 +117,7 @@
 	function cloneDetails(){
 		const container = document.getElementById("container");
 		const rectangle = document.getElementById("rectangle");
-			
-		console.log(detailBoxCount);
+
 		const cloneID = detailBoxCount + 1;
 		document.getElementById("selectTransportMode"+detailBoxCount).id = "selectTransportMode"+cloneID.toString();
 		document.getElementById("flightNum"+detailBoxCount).id = "flightNum"+cloneID.toString();
@@ -180,8 +141,7 @@
 		document.getElementById("departTime"+detailBoxCount).id = "departTimeSave";
 		document.getElementById("arriveLocation"+detailBoxCount).id = "arriveLocationSave";
 		document.getElementById("arriveTime"+detailBoxCount).id = "arriveTimeSave";
-		
-		console.log(document.querySelectorAll('.rectangle').length);
+
 		const numOfBox = document.querySelectorAll('.rectangle').length;
 		for (let i = 1; i+1 <= numOfBox; i++){
 			const arrayName = "Rectangle"+i.toString();

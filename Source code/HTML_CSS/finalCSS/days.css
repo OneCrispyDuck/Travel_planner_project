@@ -36,12 +36,12 @@ img{
 
 }
 .rectangle{
-    display: flex;
+    display: relative;
     width:80%;
-    height: 500px;
+    height: auto;
     overflow: scroll;
     border: 1px solid #ababab;
-    transform: translate(20%, -30%);
+    transform: translate(15%, 10%);
     border-radius: 5%/15%;
     
 }
