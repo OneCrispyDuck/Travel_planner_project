@@ -3,10 +3,14 @@
    - Use event listeners to capture the form submission event and prevent the default form submission behavior.
    - Extract the user input from the form fields.
 
-2. Data Storage
+2. Data Storage (BIGGEST LOAD ~ Also very important)
    - Consider using a database for storing a large amount of user input data. Options could be SQL (like MySQL, PostgreSQL) or NoSQL (like MongoDB) databases depending on your data structure.
    - Alternatively, for temporary storage or less sensitive data, you can use browser-based storage like localStorage or sessionStorage.
+    - Another alternative: extract the input data within the form - module: 'sheetJS' (convert the data into the folling formats: excel (.xlsx)/(csv(.csv) and HTML (.html). The mode of data type for this format is in an 'Array'.
    - Ensure data is sanitized and validated before storage to prevent security issues like SQL injection.
+
+#Note: it is important to understand the most convinient method for use going forward on how we'd like to extract our data that will work the best when converted into PDF
+
 
 3. PDF Design
    - Use jsPDF library to generate the PDF.
