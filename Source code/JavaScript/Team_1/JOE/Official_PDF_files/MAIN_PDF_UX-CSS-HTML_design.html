@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Define the page size for printing */
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    /* Set styles for printing */
+    @media print {
+      html, body {
+        width: 210mm;
+        height: 297mm;
+      }
+
+      .page {
+        width: 21cm;
+        min-height: 29.7cm;
+        padding: 2cm;
+        margin: 1cm auto;
+        border: 1px #D3D3D3 solid;
+        border-radius: 5px;
+        background: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    /* Styles for your banner */
+    .banner {
+      width: 1100px;
+      height: 150px;
+      border: solid;
+      border-color: #979AF1; /* Choose your border color */
+      background-color: #979AF1; /* Add a background color (white in this case) */
+      /* Additional styles go here */
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- Your banner content here -->
+    <div class="banner">
+      <!-- Add your logo and other content here -->
+      <img src="PDF_Logo.png" alt="Logo" width="350" height="150">
+    </div> <!-- Don't forget to close the div -->
+  </div>
+  <h3 style = "font-family: arial; font-size: 150%">Transport information</h3>
+</body>
+</html>

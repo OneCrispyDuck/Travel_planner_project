@@ -26,5 +26,23 @@ UX Design: PDF Generation
 
 
 TASK DISTRIBUTION:
+Good'day PDF team, I've pushed a PDF flowchart to the GitHub repo - It's a general idea of what we might need to complete and generate the PDF form.
+I've still got a few things to add, or if you also see that we need a few things to add to the flowchart you can too.
+But overall that's it.
 
-JOSEPH: 
+@Tyler you and me can handle the styling of the PDF document.
+
+@ZED & @sinnia s1314695  I'll task you guys on some of the other parts of the JavaScript aspects, or if you fancy a specific part that's on the flow chart ~ be my guest to take it 🙂 
+
+PDF Styling: @Joseph  / @Tyler 
+JavaScript: @Joseph  / @ZED  / @sinnia s1314695 
+
+To the data processing team:
+We are still figuring out what we will be utilizing to capture the user input data, it's likely to be some from of data-structure that will be called upon when generating the PDF.  Feel free to take a look at my flowchart too or any of my GitHub pushes 🙂
+
+Notes:
+
+Tranport template
+- Flight
+- Regular Transport
+Day actvities template 
