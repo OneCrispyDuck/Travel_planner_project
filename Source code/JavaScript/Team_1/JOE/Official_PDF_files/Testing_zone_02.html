@@ -1,0 +1,33 @@
+// Assuming you have a form in HTML
+// <form id="travelInfo">
+//   <input type="text" id="name" name="name">
+//   <input type="text" id="flightInfo" name="flightInfo">
+//   <input type="text" id="address" name="address">
+//   <!-- more fields... -->
+//   <button type="submit">Submit</button>
+// </form>
+
+
+<script>
+
+document.getElementById('travelInfo').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  // Extract data
+  var name = document.getElementById('name').value;
+  var flightInfo = document.getElementById('flightInfo').value;
+  var address = document.getElementById('address').value;
+  // Extract more fields...
+
+  // Create PDF
+  var doc = new jsPDF();
+
+  doc.text('Name: ' + name, 10, 10);
+  doc.text('Flight Information: ' + flightInfo, 10, 20);
+  doc.text('Address: ' + address, 10, 30);
+  // Add more fields...
+
+  // Save the PDF
+  doc.save('TravelInfo.pdf');
+});
+</script>
