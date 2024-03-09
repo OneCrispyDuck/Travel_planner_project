@@ -1,33 +1,543 @@
-// Assuming you have a form in HTML
-// <form id="travelInfo">
-//   <input type="text" id="name" name="name">
-//   <input type="text" id="flightInfo" name="flightInfo">
-//   <input type="text" id="address" name="address">
-//   <!-- more fields... -->
-//   <button type="submit">Submit</button>
-// </form>
+<div style="width: 100%; height: 100%; position: relative; background: rgba(248.61, 248.61, 248.61, 0.89)">
+  <div style="width: 575px; height: 82px; left: 10px; top: 16px; position: absolute; background: rgba(64.59, 71.37, 234.16, 0.53)"></div>
+  <img style="width: 184px; height: 59px; left: 34px; top: 16px; position: absolute" src="https://via.placeholder.com/184x59" />
+  <div style="width: 105px; height: 8px; left: 37px; top: 75px; position: absolute; color: white; font-size: 12px; font-family: JejuHallasan; font-weight: 400; word-wrap: break-word">powered by EZGO</div>
+  <div style="width: 333px; height: 174px; left: 17px; top: 139px; position: absolute; background: #F3F3F3"></div>
+  <div style="width: 82px; height: 14px; left: 17px; top: 127px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">Transport info</div>
+  <div style="width: 67px; height: 11px; left: 22px; top: 154px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Transport</div>
+  <div style="width: 42px; height: 14px; left: 27px; top: 170px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Flight</div>
+  <div style="width: 44px; height: 11px; left: 22px; top: 197px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Depart</div>
+  <div style="width: 184px; height: 12px; left: 23px; top: 214px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Hong Kong International Airport</div>
+  <div style="width: 44px; height: 11px; left: 22px; top: 239px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Arrive</div>
+  <div style="width: 184px; height: 12px; left: 23px; top: 256px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Heathrow International Airport</div>
+  <div style="width: 59px; height: 11px; left: 223px; top: 196px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Take-off</div>
+  <div style="width: 113px; height: 19px; left: 226px; top: 210px; position: absolute; color: #3A4646; font-size: 16px; font-family: Offside; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">23.03.01 2:13 HKT</div>
+  <div style="width: 59px; height: 11px; left: 220px; top: 254px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Take-off</div>
+  <div style="width: 113px; height: 19px; left: 226px; top: 266px; position: absolute; color: #3A4646; font-size: 16px; font-family: Offside; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">23.03.01 2:13 HKT</div>
+  <div style="width: 86px; height: 11px; left: 146px; top: 155px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Transport info</div>
+  <div style="width: 131px; height: 14px; left: 151px; top: 170px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Flight number: CX 273</div>
+  <div style="width: 89px; height: 14px; left: 366px; top: 127px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Travellers info</div>
+  <div style="width: 333px; height: 174px; left: 17px; top: 337px; position: absolute; background: #F3F3F3"></div>
+  <div style="width: 65px; height: 14px; left: 17px; top: 323px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">Hotel info</div>
+  <div style="width: 41px; height: 11px; left: 27px; top: 348px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Hotel </div>
+  <div style="width: 56px; height: 13px; left: 29px; top: 365px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Sheraton</div>
+  <div style="width: 58px; height: 11px; left: 27px; top: 384px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Check-in</div>
+  <div style="width: 67px; height: 11px; left: 27px; top: 420px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Check-out</div>
+  <div style="left: 27px; top: 396px; position: absolute; color: #3A4646; font-size: 12px; font-family: Nunito; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">2024/03/7  14:30</div>
+  <div style="left: 27px; top: 432px; position: absolute; color: #3A4646; font-size: 12px; font-family: Nunito; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">2024/03/14  12:00</div>
+  <div style="width: 58px; height: 11px; left: 191px; top: 347px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Address</div>
+  <div style="width: 88px; height: 88px; left: 209px; top: 362px; position: absolute; background: black; border: 0.50px black solid"></div>
+  <div style="width: 181px; height: 35px; left: 169px; top: 450px; position: absolute; color: black; font-size: 10px; font-family: Inter; font-weight: 100; word-wrap: break-word">https://www.google.com.hk/maps/place/%E9%A6%99%E6%B8%AF%E5%96%9C%E4%BE%86%E7%99%BB%E9%85%92%E5%BA%97</div>
+  <div style="width: 333px; height: 272px; left: 17px; top: 546px; position: absolute; background: #F3F3F3"></div>
+  <div style="width: 103px; height: 11px; left: 367px; top: 302px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Name</div>
+  <div style="width: 50px; height: 15px; left: 373px; top: 317px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Nick</div>
+  <div style="width: 95px; height: 11px; left: 475px; top: 302px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Phone No.</div>
+  <div style="width: 108px; height: 11px; left: 476px; top: 316px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">+852 5839 6777</div>
+  <div style="width: 40px; height: 11px; left: 367px; top: 338px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Email</div>
+  <div style="width: 219px; height: 18px; left: 367px; top: 349px; position: absolute; color: #3A4646; font-size: 16px; font-family: Nunito; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">DarcyLi_unicorn_sparkles@gmail.com</div>
+  <div style="width: 64px; height: 11px; left: 367px; top: 376px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Name</div>
+  <div style="width: 50px; height: 15px; left: 373px; top: 391px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Nick</div>
+  <div style="width: 95px; height: 11px; left: 475px; top: 376px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Phone No.</div>
+  <div style="width: 108px; height: 11px; left: 476px; top: 390px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">+852 5839 6777</div>
+  <div style="width: 40px; height: 11px; left: 367px; top: 412px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Email</div>
+  <div style="width: 219px; height: 18px; left: 367px; top: 423px; position: absolute; color: #3A4646; font-size: 11px; font-family: Nunito; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">DarcyLi_unicorn_sparkles@gmail.com</div>
+  <div style="width: 103px; height: 11px; left: 367px; top: 151px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Name</div>
+  <div style="width: 50px; height: 15px; left: 373px; top: 166px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Nick</div>
+  <div style="width: 95px; height: 11px; left: 473px; top: 151px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Phone No.</div>
+  <div style="width: 108px; height: 11px; left: 474px; top: 165px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">+852 5839 6777</div>
+  <div style="width: 40px; height: 11px; left: 367px; top: 187px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Email</div>
+  <div style="width: 219px; height: 18px; left: 365px; top: 198px; position: absolute; color: #3A4646; font-size: 16px; font-family: Nunito; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">DarcyLi_unicorn_sparkles@gmail.com</div>
+  <div style="width: 64px; height: 11px; left: 367px; top: 225px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Name</div>
+  <div style="width: 50px; height: 15px; left: 373px; top: 240px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Nick</div>
+  <div style="width: 95px; height: 11px; left: 473px; top: 225px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Phone No.</div>
+  <div style="width: 108px; height: 11px; left: 474px; top: 239px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">+852 5839 6777</div>
+  <div style="width: 40px; height: 11px; left: 367px; top: 261px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Email</div>
+  <div style="width: 219px; height: 18px; left: 365px; top: 272px; position: absolute; color: #3A4646; font-size: 11px; font-family: Nunito; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">DarcyLi_unicorn_sparkles@gmail.com</div>
+  <div style="width: 65px; height: 14px; left: 17px; top: 532px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 400; word-wrap: break-word">Day1</div>
+  <div style="width: 41px; height: 11px; left: 23px; top: 559px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Place1</div>
+  <div style="width: 58px; height: 11px; left: 183px; top: 558px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Location</div>
+  <div style="width: 41px; height: 11px; left: 24px; top: 629px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Place2</div>
+  <div style="width: 47px; height: 11px; left: 21px; top: 688px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Place3</div>
+  <div style="width: 58px; height: 11px; left: 183px; top: 625px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Location</div>
+  <div style="width: 58px; height: 11px; left: 183px; top: 689px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Location</div>
+  <div style="width: 114px; height: 13px; left: 23px; top: 580px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">The british museum</div>
+  <div style="width: 141px; height: 13px; left: 183px; top: 580px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Great Russell Street, London WC1B 3DG</div>
+  <div style="width: 123px; height: 11px; left: 367px; top: 535px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Details&Activities</div>
+  <div style="width: 47px; height: 11px; left: 21px; top: 746px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Place4</div>
+  <div style="width: 58px; height: 11px; left: 183px; top: 745px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Location</div>
+</div>
 
-
-<script>
-
-document.getElementById('travelInfo').addEventListener('submit', function(e) {
-  e.preventDefault();
-
-  // Extract data
-  var name = document.getElementById('name').value;
-  var flightInfo = document.getElementById('flightInfo').value;
-  var address = document.getElementById('address').value;
-  // Extract more fields...
-
-  // Create PDF
-  var doc = new jsPDF();
-
-  doc.text('Name: ' + name, 10, 10);
-  doc.text('Flight Information: ' + flightInfo, 10, 20);
-  doc.text('Address: ' + address, 10, 30);
-  // Add more fields...
-
-  // Save the PDF
-  doc.save('TravelInfo.pdf');
-});
-</script>
+// powered by EZGO
+color: white;
+ font-size: 12px;
+ font-family: JejuHallasan;
+ font-weight: 400;
+ word-wrap: break-word
+---
+// Transport info
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-weight: 400;
+ word-wrap: break-word
+---
+// Transport
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Flight
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-weight: 300;
+ word-wrap: break-word
+---
+// Depart
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Hong Kong International Airport
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-weight: 300;
+ word-wrap: break-word
+---
+// Arrive
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Heathrow International Airport
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-weight: 300;
+ word-wrap: break-word
+---
+// Take-off
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// 23.03.01 2:13 HKT
+color: #3A4646;
+ font-size: 16px;
+ font-family: Offside;
+ font-weight: 400;
+ line-height: 24px;
+ letter-spacing: 0.50px;
+ word-wrap: break-word
+---
+// Take-off
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// 23.03.01 2:13 HKT
+color: #3A4646;
+ font-size: 16px;
+ font-family: Offside;
+ font-weight: 400;
+ line-height: 24px;
+ letter-spacing: 0.50px;
+ word-wrap: break-word
+---
+// Transport info
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Flight number: CX 273
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-weight: 300;
+ word-wrap: break-word
+---
+// Travellers info
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-weight: 300;
+ word-wrap: break-word
+---
+// Hotel info
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-weight: 400;
+ word-wrap: break-word
+---
+// Hotel 
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Sheraton
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-weight: 300;
+ word-wrap: break-word
+---
+// Check-in
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Check-out
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// 2024/03/7  14:30
+color: #3A4646;
+ font-size: 12px;
+ font-family: Nunito;
+ font-weight: 400;
+ line-height: 24px;
+ letter-spacing: 0.50px;
+ word-wrap: break-word
+---
+// 2024/03/14  12:00
+color: #3A4646;
+ font-size: 12px;
+ font-family: Nunito;
+ font-weight: 400;
+ line-height: 24px;
+ letter-spacing: 0.50px;
+ word-wrap: break-word
+---
+// Address
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// https://www.google.com.hk/maps/place/%E9%A6%99%E6%B8%AF%E5%96%9C%E4%BE%86%E7%99%BB%E9%85%92%E5%BA%97
+color: black;
+ font-size: 10px;
+ font-family: Inter;
+ font-weight: 100;
+ word-wrap: break-word
+---
+// Name
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Nick
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Phone No.
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// +852 5839 6777
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Email
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// DarcyLi_unicorn_sparkles@gmail.com
+color: #3A4646;
+ font-size: 16px;
+ font-family: Nunito;
+ font-weight: 400;
+ line-height: 24px;
+ letter-spacing: 0.50px;
+ word-wrap: break-word
+---
+// Name
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Nick
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Phone No.
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// +852 5839 6777
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Email
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// DarcyLi_unicorn_sparkles@gmail.com
+color: #3A4646;
+ font-size: 11px;
+ font-family: Nunito;
+ font-weight: 400;
+ line-height: 24px;
+ letter-spacing: 0.50px;
+ word-wrap: break-word
+---
+// Name
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Nick
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Phone No.
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// +852 5839 6777
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Email
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// DarcyLi_unicorn_sparkles@gmail.com
+color: #3A4646;
+ font-size: 16px;
+ font-family: Nunito;
+ font-weight: 400;
+ line-height: 24px;
+ letter-spacing: 0.50px;
+ word-wrap: break-word
+---
+// Name
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Nick
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Phone No.
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// +852 5839 6777
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Email
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// DarcyLi_unicorn_sparkles@gmail.com
+color: #3A4646;
+ font-size: 11px;
+ font-family: Nunito;
+ font-weight: 400;
+ line-height: 24px;
+ letter-spacing: 0.50px;
+ word-wrap: break-word
+---
+// Day1
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-weight: 400;
+ word-wrap: break-word
+---
+// Place1
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Location
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Place2
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Place3
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Location
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Location
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// The british museum
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-weight: 300;
+ word-wrap: break-word
+---
+// Great Russell Street, London WC1B 3DG
+color: black;
+ font-size: 12px;
+ font-family: Inter;
+ font-weight: 300;
+ word-wrap: break-word
+---
+// Details&Activities
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Place4
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
+---
+// Location
+color: #9A9EF4;
+ font-size: 12px;
+ font-family: Inter;
+ font-style: italic;
+ font-weight: 900;
+ word-wrap: break-word
