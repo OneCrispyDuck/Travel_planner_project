@@ -1,0 +1,82 @@
+1. Storing Traveler Information:
+You can create an array or an object to store the traveler details. Each traveler can be represented as an object with properties like name, email, and phone.
+For example:
+
+const travelers = [
+  { name: 'John Doe', email: 'john@example.com', phone: '123-456-7890' },
+  { name: 'Jane Smith', email: 'jane@example.com', phone: '987-654-3210' },
+  // Add more travelers as needed
+];
+
+
+2. Outputting Traveler Details:
+You can loop through the travelers array and dynamically generate the HTML elements for each traveler.
+For example, using JavaScript:
+
+const travelersContainer = document.getElementById('travelers-container'); // Assuming you have a container element
+travelers.forEach((traveler) => {
+  const travelerDiv = document.createElement('div');
+  travelerDiv.textContent = `Name: ${traveler.name}, Email: ${traveler.email}, Phone: ${traveler.phone}`;
+  travelersContainer.appendChild(travelerDiv);
+});
+
+
+3. Creating a PDF Document:
+To generate a PDF, you can use a library like jsPDF. You’ll need to format the traveler details appropriately and add them to the PDF.
+Example using jsPDF:
+
+const doc = new jsPDF();
+travelers.forEach((traveler, index) => {
+  doc.text(20, 20 + index * 10, `Name: ${traveler.name}, Email: ${traveler.email}, Phone: ${traveler.phone}`);
+});
+doc.save('travelers.pdf');
+
+
+4. Calling CSS Design from Another Script:
+If your CSS is in a separate file (e.g., styles.css), you can link it in your HTML using a <link> tag:
+
+<link rel="stylesheet" href="styles.css">
+
+
+------------
+MORE ABOUT CALLING CSS STYLE FROM ANOTHER FOLDER IN YOUR JAVASCRIPT DIRECTORIES:
+
+1. Relative Path:
+- First, ensure that your CSS file is located in the desired folder.
+- Use a relative path to link the CSS file in your HTML. For example, if your CSS file is in a folder named “styles” and your HTML file is in the root folder, you can use: HTML
+
+<link rel="stylesheet" type="text/css" href="styles/your-stylesheet.css">
+
+- Replace "your-stylesheet.css" with the actual name of your CSS file.
+
+
+2. JavaScript Interaction:
+- In your JavaScript code, you can manipulate the styles of HTML elements using the DOM (Document Object Model).
+- To change the style of an element, you can access its style property and set specific CSS properties.
+- For example, to change the background color of a <div> element with the ID “myRectangle”, you can do the following:
+
+const myRectangle = document.getElementById("myRectangle");
+myRectangle.style.backgroundColor = "blue";
+
+
+3. Reusable Styles:
+- If you have a consistent style that you want to apply to multiple elements, consider defining a CSS class.
+- Create a CSS file with your desired styles (e.g., “common-styles.css”) and place it in the appropriate folder.
+- In your HTML, link to this CSS file:
+
+<link rel="stylesheet" type="text/css" href="styles/common-styles.css">
+
+- Apply the class to your HTML elements:
+<div id="myRectangle" class="rectangle"></div>
+
+css:
+/* common-styles.css */
+.rectangle {
+  width: 100px;
+  height: 50px;
+  background-color: yellow;
+  /* Add other common styles here */
+}
+
+
+

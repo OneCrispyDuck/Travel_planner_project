@@ -39,6 +39,21 @@
       /* Additional styles go here */
     }
 
+    .logo{
+      width: 30%;
+      height:80%;
+    }
+
+    /*come back to me! - This is the white container where all the information in the arrays should appear*/
+    .container{
+      width: 49%;
+      height: 22%;
+      background-color: #ffffff;
+      position: absolute;
+
+
+    }
+
     #transportation{
       position: absolute;
       top: 180px;
@@ -63,6 +78,14 @@
       font-family: Arial;
     }
 
+    #day_activities{
+      position: absolute;
+      top: 72%;
+      left: 3%;
+      color: #696969;
+      font-family: Arial;
+    }
+
     body{
       background-color: #F3F3F3;
     }
@@ -74,7 +97,7 @@
     <!-- Your banner content here -->
     <div class="banner">
       <!-- Add your logo and other content here -->
-      <img src="PDF_Logo.png" alt="Logo" width="350" height="150">
+      <img src="PDF_Logo.png" alt="Logo" class="logo">
     </div> <!-- Don't forget to close the div -->
   </div>
 
@@ -83,40 +106,135 @@
 
   <!--Transportaion section (Styling/Format/Coordination)-->
     <div class="page">
-    <div style="width: 100%; height: 100%; background: #F3F3F3"></div>
-    <div style="width: 550px; height: 270px; left: 17px; top: 230px; position: absolute; background: #ffffff"></div>
-    <div style="width: 67px; height: 11px; left: 22px; top: 240px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Transport</div>
-    <div style="width: 42px; height: 14px; left: 27px; top: 270px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Flight</div>
-    <div style="width: 50px; height: 11px; left: 22px; top: 320px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Depart</div>
-    <div style="width: 184px; height: 12px; left: 23px; top: 340px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Hong Kong International Airport</div>
-    <div style="width: 44px; height: 11px; left: 22px; top: 400px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Arrive</div>
-    <div style="width: 184px; height: 12px; left: 23px; top: 420px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Heathrow International Airport</div>
-    <div style="width: 59px; height: 11px; left: 223px; top: 320px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Take-off</div>
-    <div style="width: 113px; height: 19px; left: 226px; top: 340px; position: absolute; color: #3A4646; font-size: 16px; font-family: Offside; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">23.03.01 2:13 HKT</div>
-    <div style="width: 100px; height: 11px; left: 223px; top: 240px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Transport info</div>
-    <div style="width: 180px; height: 14px; left: 223px; top: 270px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Flight number: CX 273</div>
-    <div style="width: 59px; height: 11px; left: 220px; top: 400px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Take-off</div>
-    <div style="width: 113px; height: 19px; left: 226px; top: 420px; position: absolute; color: #3A4646; font-size: 16px; font-family: Offside; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">23.03.01 2:13 HKT</div>
-    
-    <!--Hotel information section (Styling/Format/Coordination)-->
-    <h3 id="hotel_info">Hotel information</h3>
-    <div style="width: 550px; height: 270px; left: 17px; top: 550px; position: absolute; background: #ffffff"></div>
-    <div style="width: 41px; height: 11px; left: 27px; top: 565px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Hotel </div>
-    <div style="width: 56px; height: 13px; left: 29px; top: 590px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Sheraton</div>
-    <div style="width: 100px; height: 11px; left: 27px; top: 650px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Check-in</div>
-    <div style="width: 100px; height: 11px; left: 27px; top: 720px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Check-out</div>
-    <div style="left: 27px; top: 670px; position: absolute; color: #3A4646; font-size: 12px; font-family: Nunito; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">2024/03/7  14:30</div>
-    <div style="left: 27px; top: 740px; position: absolute; color: #3A4646; font-size: 12px; font-family: Nunito; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">2024/03/14  12:00</div>
-    <div style="width: 58px; height: 11px; left: 191px; top: 565px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Address</div>
-    <div style="width: 100px; height: 100px; left: 450px; top: 700px; position: absolute; background: rgb(0, 0, 0); border: 0.50px black rgb(255, 255, 255)"></div>
-    <div style="width: 400px; height: 13px; left: 195px; top: 590px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Address of hotel</div>
+      <div style="width: 100%; height: 100%; background: #F3F3F3"></div>
+      <div style="width: 49%; height: 22%; left: 17px; top: 230px; position: absolute; background: #ffffff"></div>
+      <div style="width: 67px; height: 11px; left: 22px; top: 240px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Transport</div>
+      <div style="width: 42px; height: 14px; left: 27px; top: 270px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Flight</div>
+      <div style="width: 50px; height: 11px; left: 22px; top: 320px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Depart</div>
+      <div style="width: 184px; height: 12px; left: 23px; top: 340px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Hong Kong International Airport</div>
+      <div style="width: 44px; height: 11px; left: 22px; top: 400px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Arrive</div>
+      <div style="width: 184px; height: 12px; left: 23px; top: 420px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Heathrow International Airport</div>
+      <div style="width: 59px; height: 11px; left: 223px; top: 320px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Take-off</div>
+      <div style="width: 113px; height: 19px; left: 226px; top: 340px; position: absolute; color: #3A4646; font-size: 16px; font-family: Offside; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">23.03.01 2:13 HKT</div>
+      <div style="width: 200px; height: 11px; left: 223px; top: 240px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Transport information</div>
+      <div style="width: 180px; height: 14px; left: 223px; top: 270px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Flight number: CX 273</div>
+      <div style="width: 59px; height: 11px; left: 220px; top: 400px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Take-off</div>
+      <div style="width: 113px; height: 19px; left: 226px; top: 420px; position: absolute; color: #3A4646; font-size: 16px; font-family: Offside; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">23.03.01 2:13 HKT</div>
+      
+      <!--Hotel information section (Styling/Format/Coordination)-->
+      <h3 id="hotel_info">Hotel information</h3>
+      <div style="width: 550px; height: 270px; left: 17px; top: 550px; position: absolute; background: #ffffff"></div>
+      <div style="width: 41px; height: 11px; left: 27px; top: 565px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Hotel </div>
+      <div style="width: 56px; height: 13px; left: 29px; top: 590px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Sheraton</div>
+      <div style="width: 100px; height: 11px; left: 27px; top: 650px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Check-in</div>
+      <div style="width: 100px; height: 11px; left: 27px; top: 720px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Check-out</div>
+      <div style="left: 27px; top: 670px; position: absolute; color: #3A4646; font-size: 12px; font-family: Nunito; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">2024/03/7  14:30</div>
+      <div style="left: 27px; top: 740px; position: absolute; color: #3A4646; font-size: 12px; font-family: Nunito; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">2024/03/14  12:00</div>
+      <div style="width: 58px; height: 11px; left: 191px; top: 565px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Address</div>
+      <div style="width: 100px; height: 100px; left: 450px; top: 700px; position: absolute; background: rgb(0, 0, 0); border: 0.50px black rgb(255, 255, 255)"></div>
+      <div style="width: 400px; height: 13px; left: 195px; top: 590px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Address of hotel</div>
+
+      <!--Travellers Information-->
+      <div style="width: 103px; height: 11px; right: 420px; top: 240px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Name</div>
+      <div style="width: 50px; height: 15px; right: 470px; top: 260px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Nick</div>
+      <div style="width: 95px; height: 11px; right: 250px; top: 240px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Phone No.</div>
+      <div style="width: 120px; height: 11px; right: 230px; top: 260px; position: absolute; color: black; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">+852 5839 6777</div>
+      <div style="width: 40px; height: 11px; right: 480px; top: 290px; position: absolute; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Email</div>
+      <div style="width: 219px; height: 18px; right: 300px; top: 300px; position: absolute; color: #3A4646; font-size: 10px; font-family: Nunito; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">DarcyLi_unicorn_sparkles@gmail.com</div>
+
+      <!--Day Activities-->
+      <h3 id="day_activities">Day 1</h3>
+      <div class="container", style="left: 1.5%; top: 76%"></div>
+
+   
+
 
     
-    
-
-
-
   </div>
-  </div>
+</div>
+
+<script>
+// Assuming you have an array of data
+let data = ['Element 1', 'Element 2', 'Element 3'];
+
+function cloneDetails(){
+    const container = document.getElementById("container");
+    const rectangle = document.getElementById("rectangle");
+
+    const cloneID = detailBoxCount + 1;
+    document.getElementById("selectTransportMode"+detailBoxCount).id = "selectTransportMode"+cloneID.toString();
+    document.getElementById("flightNum"+detailBoxCount).id = "flightNum"+cloneID.toString();
+    document.getElementById("departLocation"+detailBoxCount).id = "departLocation"+cloneID.toString();
+    document.getElementById("departTime"+detailBoxCount).id = "departTime"+cloneID.toString();
+    document.getElementById("arriveLocation"+detailBoxCount).id = "arriveLocation"+cloneID.toString();
+    document.getElementById("arriveTime"+detailBoxCount).id = "arriveTime"+cloneID.toString();
+    
+    detailBoxCount += 1
+    const cloneBox = rectangle.cloneNode(true);      
+    cloneBox.setAttribute('id', "rectangle"+cloneID.toString());
+    container.appendChild(cloneBox);
+    document.getElementById("rectangle"+cloneID.toString()).style.display = 'inline-block';
+
+    // Add data from your array to the cloned elements
+    data.forEach((element, index) => {
+        let newDiv = document.createElement('div');
+        newDiv.textContent = element;
+        cloneBox.appendChild(newDiv);
+    });
+}
+
+
+</script>
+
+<!--To manipulate the data and elements in the array to appear in a designated position on the PDF document, you can use the jsPDF library’s methods to specify the 
+  position and format of the text.
+
+Here’s an example of how you can do this:
+
+Joe's thoughts: The following code snippet below might have to be altered in the 'days_v3.html' script provided by Don & ZED
+-->
+<script>
+  function saveToPdf(){
+    let doc = new jsPDF();
+
+    allData.forEach((item, index) => {
+        // Convert the item array to a string
+        let text = JSON.stringify(item);
+
+        // Calculate the y position for the text
+        let yPos = 10 + index * 10;
+
+        // Add the text to the PDF at the specified position
+        doc.text(text, 10, yPos);
+    });
+
+    doc.save('data.pdf');
+}
+
+</script>
+
+<!--In this example, the doc.text method is used to add the text to the PDF. The first argument is the text to add, and the second and third arguments 
+  are the x and y positions for the text, respectively. The y position is calculated based on the index of the item in the allData array, so each item 
+  will appear on a new line.
+
+If you want to format the text in a certain way, you can modify the text variable before adding it to the PDF. 
+For example, you can use the join method to convert the item array to a string with a specific separator:
+-->
+<script>
+  let text = item.join(', ');
+</script>
+
+
+<!--This will create a string where each element in the item array is separated by a comma and a space.
+You can also use the setFontSize, setFontStyle, and setFont methods to change the font size, style, and type, respectively:-->
+
+<script>
+  doc.setFontSize(12);
+  doc.setFontStyle('bold');
+  doc.setFont('helvetica');
+</script>
+
+
+
 </body>
 </html>
