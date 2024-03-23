@@ -191,25 +191,41 @@
     
   </div>
 </div>
-<script src="global.js"></script>
-    <script>
-      function saveToPdf() {
-        const doc = new jsPDF();
+<script>
+  window.onload = function() {
+      // Access the allData array from global.js
+      var data = allData;
 
-        allData.forEach((item, index) => {
-            // Convert the item array to a string
-            let text = JSON.stringify(item);
+      // Loop through the data array
+      for (var i = 0; i < data.length; i++) {
+          // Get the specific div by its id
+          var div = document.getElementById(data[i][0]);
 
-            // Calculate the y position for the text
-            let yPos = 10 + index * 10;
-
-            // Add the text to the PDF at the specified position
-            doc.text(text, 10, yPos);
-        });
-
-        doc.save('data.pdf');
+          // Check if the div exists
+          if (div) {
+              // Populate the div with the data
+              div.innerHTML = data[i][1];
+          }
       }
-    </script>
+  };
+
+  function saveToPdf() {
+      const doc = new jsPDF();
+
+      allData.forEach((item, index) => {
+          // Convert the item array to a string
+          let text = JSON.stringify(item);
+
+          // Calculate the y position for the text
+          let yPos = 10 + index * 10;
+
+          // Add the text to the PDF at the specified position
+          doc.text(text, 10, yPos);
+      });
+
+      doc.save('data.pdf');
+  }
+</script>
   </div>
 </body>
 </html>

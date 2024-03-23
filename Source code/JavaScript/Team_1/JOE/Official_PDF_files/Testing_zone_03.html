@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel = "stylesheet" type="text/css" href = "finalCSS/days.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+    <script src="global.js"></script>
+</head>
+<body>
+    <h3 id="hotel_info">Hotel information</h3>
+    <div style="width: 550px; height: 270px; left: 17px; top: 550px; position: absolute; background: #ffffff"></div>
+    <!-- Other divs for hotel information -->
+
+    <h3 id="day_activities">Day 1</h3>
+    <div class="container", style="left: 1.5%; top: 76%"></div>
+
+    <script>
+        window.onload = function() {
+            // Access the allData array from global.js
+            var data = allData;
+
+            // Loop through the data array
+            for (var i = 0; i < data.length; i++) {
+                // Get the specific div by its id
+                var div = document.getElementById(data[i][0]);
+
+                // Check if the div exists
+                if (div) {
+                    // Populate the div with the data
+                    div.innerHTML = data[i][1];
+                }
+            }
+        };
+
+        function saveToPdf() {
+            const doc = new jsPDF();
+
+            allData.forEach((item, index) => {
+                // Convert the item array to a string
+                let text = JSON.stringify(item);
+
+                // Calculate the y position for the text
+                let yPos = 10 + index * 10;
+
+                // Add the text to the PDF at the specified position
+                doc.text(text, 10, yPos);
+            });
+
+            doc.save('data.pdf');
+        }
+    </script>
+</body>
+</html>

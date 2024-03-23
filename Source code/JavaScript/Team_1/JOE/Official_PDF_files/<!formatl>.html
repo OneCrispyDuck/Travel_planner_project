@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Itinerary</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+<body>
+    <div id="itinerary"></div>
+
+    <script src="global.js"></script>
+    <script>
+        function generateItinerary() {
+            var itineraryDiv = document.getElementById('itinerary');
+
+            for (var i = 0; i < allData.length; i++) {
+                var data = allData[i];
+
+                // Create HTML elements
+                var dateElement = document.createElement('p');
+                var locationElement = document.createElement('p');
+                var transportElement = document.createElement('p');
+
+                // Populate HTML elements with data
+                dateElement.innerHTML = 'Date: ' + data.date;
+                locationElement.innerHTML = 'Location: ' + data.location;
+                transportElement.innerHTML = 'Transport: ' + data.transport;
+
+                // Append HTML elements to the itinerary div
+                itineraryDiv.appendChild(dateElement);
+                itineraryDiv.appendChild(locationElement);
+                itineraryDiv.appendChild(transportElement);
+            }
+        }
+
+        generateItinerary();
+
+        // Generate the PDF using jsPDF or html2canvas
+        // ...
+    </script>
+</body>
+</html>

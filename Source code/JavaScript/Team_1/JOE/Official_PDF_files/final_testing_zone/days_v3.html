@@ -293,3 +293,74 @@ function saveToPdf(){//Below is Zed's change
 </script>
 </html>
 
+To generate a PDF file based on the provided HTML, CSS, and JavaScript code, we can use a library like jsPDF. Here's an example of how you can achieve this:
+
+1. First, include the jsPDF library in your HTML file:
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+```
+
+2. Next, modify the `saveToPdf` function to create a new jsPDF instance and add the content to the PDF document:
+
+```javascript
+function saveToPdf() {
+  const doc = new jsPDF();
+
+  // Add your banner content
+  const bannerElement = document.querySelector('.banner');
+  const bannerCanvas = document.createElement('canvas');
+  const bannerContext = bannerCanvas.getContext('2d');
+  html2canvas(bannerElement, { canvas: bannerCanvas }).then(canvas => {
+    const bannerImageData = canvas.toDataURL('image/png');
+    doc.addImage(bannerImageData, 'PNG', 10, 10, 190, 30); // Adjust position and size as needed
+  });
+
+  // Add your transportation section
+  const transportationElement = document.querySelector('#transportation');
+  const transportationCanvas = document.createElement('canvas');
+  const transportationContext = transportationCanvas.getContext('2d');
+  html2canvas(transportationElement, { canvas: transportationCanvas }).then(canvas => {
+    const transportationImageData = canvas.toDataURL('image/png');
+    doc.addImage(transportationImageData, 'PNG', 10, 50, 190, 100); // Adjust position and size as needed
+  });
+
+  // Add your travellers section
+  const travellersElement = document.querySelector('#travellers');
+  const travellersCanvas = document.createElement('canvas');
+  const travellersContext = travellersCanvas.getContext('2d');
+  html2canvas(travellersElement, { canvas: travellersCanvas }).then(canvas => {
+    const travellersImageData = canvas.toDataURL('image/png');
+    doc.addImage(travellersImageData, 'PNG', 10, 160, 190, 50); // Adjust position and size as needed
+  });
+
+  // Add your hotel information section
+  const hotelInfoElement = document.querySelector('#hotel_info');
+  const hotelInfoCanvas = document.createElement('canvas');
+  const hotelInfoContext = hotelInfoCanvas.getContext('2d');
+  html2canvas(hotelInfoElement, { canvas: hotelInfoCanvas }).then(canvas => {
+    const hotelInfoImageData = canvas.toDataURL('image/png');
+    doc.addImage(hotelInfoImageData, 'PNG', 10, 220, 190, 100); // Adjust position and size as needed
+  });
+
+  // Add your day activities section
+  const dayActivitiesElement = document.querySelector('#day_activities');
+  const dayActivitiesCanvas = document.createElement('canvas');
+  const dayActivitiesContext = dayActivitiesCanvas.getContext('2d');
+  html2canvas(dayActivitiesElement, { canvas: dayActivitiesCanvas }).then(canvas => {
+    const dayActivitiesImageData = canvas.toDataURL('image/png');
+    doc.addImage(dayActivitiesImageData, 'PNG', 10, 330, 190, 100); // Adjust position and size as needed
+  });
+
+  // Save the PDF file
+  doc.save('report.pdf');
+}
+```
+
+This code uses the `html2canvas` library to capture the content of each section as an image and then adds it to the PDF document using the `addImage` method of jsPDF. You'll need to include the `html2canvas` library as well:
+
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+```
+
+Note that you'll need to adjust the position and size of each section in the `addImage` method to fit your desired layout. Additionally, you may need to modify the code to handle any dynamic content or data from the provided arrays.

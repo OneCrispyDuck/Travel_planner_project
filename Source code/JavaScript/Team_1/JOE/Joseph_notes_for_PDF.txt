@@ -42,4 +42,41 @@ doc.save('a4.pdf');
 """
 
 #
+//important - HOW TO EXTRACT DATA FROM ANOHTER FILE TO BE CALLED TO APPREAR IN A 
+AREA IN YOUR PDF DESIGN.
+
+
+To include data from another file into your PDF document, you can use JavaScript to 
+fetch the data and insert it into your HTML. Here’s an example of how you can do this:
+
+First, you need to have a div element in your HTML where you want the data to be inserted. 
+Let’s say you want to insert the data in the div with the background: #F3F3F3. 
+You should give this div an id so you can easily select it with JavaScript. For example:
+
+
+<div id="data" style="width: 100%; height: 100%; background: #F3F3F3"></div>
+
+
+Then, you can use JavaScript to fetch the data from your file and insert it into this div.
+ Here’s an example of how you can do this with a JSON file:
+
+
+ <script>
+  fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('data').textContent = JSON.stringify(data);
+    });
+</script>
+
+
+In this example, data.json is the path to your JSON file. The fetch function gets the data from this file, and then the data is inserted into the div with the id data.
+
+Please note that this method requires a server to fetch the data from the file. If you open your HTML file directly in a browser (i.e., via the file:// protocol), the fetch operation may not work due to security restrictions. 
+You can use a local server for development, like Live Server for Visual Studio Code.
+
+Also, remember that JavaScript won’t run when the PDF is opened, it only runs when 
+the HTML is loaded in a web browser. So, make sure to load your HTML in a web browser and 
+print to PDF from there. This will ensure that your data is loaded and 
+displayed correctly in the PDF.
 
