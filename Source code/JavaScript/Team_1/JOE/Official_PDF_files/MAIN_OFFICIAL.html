@@ -50,6 +50,12 @@
       height:80%;
     }
 
+    .divStyle_traveller{
+      position: relative;
+      font-size: 1.3vw;
+      margin-right: 10%;
+    }
+
     /*come back to me! - This is the white container where all the information in the arrays should appear*/
     .container{
       width: 49%;
@@ -77,19 +83,21 @@
     }
     
     #hotel_info{
-      position: absolute;
-      top:500px;
-      left: 30px;
+      position: relative;
+      top: 60%;
+      left: 2%;
       color: #696969;
       font-family: Arial;
+      font-size: 2.2vw;
     }
 
     #day_activities{
-      position: absolute;
+      position: relative;
       top: 72%;
-      left: 3%;
+      left: 2%;
       color: #696969;
       font-family: Arial;
+      font-size: 2.2vw;
     }
 
     body{
@@ -141,90 +149,150 @@
     // ...
   </script>
 
-  <!--Transportaion section (Styling/Format/Coordination)-->
+  <!--Transportaion section (Styling/Format/Coordination)-->   
     <div class="page">
       <div style="width: 100%; height: 100%; background: #F3F3F3"></div>
-      <div style="width: 49%; height: 22%; left: 1%; top: 20%; position: relative; background: #ffffff; padding: 1%;">
+      <!-- First Rectangle Container (The white container that holds all of the information of transportation) -->
+      <div style="margin-bottom: 5%;">
+        <div style="width: 49%; height: 22%; left: 1%; top: 20%; position: relative; background: #ffffff; padding: 1%;">
 
-        <!--Transport & Transport information (THIS IS A HEADER! DO NOT CHANGE)-->
-        <div style="display: flex; align-items: flex-start;">
-          <div style="width: 20%; height: 5%; margin-top: 1%; margin-left: 0%;  color: #9A9EF4; position: relative;  font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">TRANSPORT</div>
-          <div style="width: 75%; height: 5%; margin-top: 1%; margin-left: 36%; color: #9A9EF4; position: relative; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">TRANSPORT INFORMATION</div>
-        </div>
 
-        <!--Transportaion type (For example 'flight') & Transport number (ARRAY DATA INSERT HERE)-->
-        <div style="display: flex; align-items: flex-start;">
-          <div style="width: 15%; height: 5%; margin-top: 2%; margin-left: 0%;  color: black;   position: relative; font-size: 1.3vw; font-family: Inter; font-weight: 300; word-wrap: break-word">Flight</div>
-          <div style="width: 70%; height: 5%; margin-top: 2%; margin-left: 45%; color: black;   position: relative; font-size:  1.3vw; font-family: Inter; font-weight: 300; word-wrap: break-word">Flight number: CX 273</div>
-        </div>
-        
+           <!--Transport & Transport information (THIS IS A HEADER! DO NOT CHANGE)-->
+           <div style="display: flex; align-items: flex-start;">
+            <div style="width: 20%; height: 5%; margin-top: 1%; margin-left: 0%;  color: #9A9EF4; position: relative;  font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">TRANSPORT</div>
+            <div style="width: 75%; height: 5%; margin-top: 1%; margin-left: 36%; color: #9A9EF4; position: relative; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">TRANSPORT INFORMATION</div>
+          </div>
 
-        <!--Departure location & Take-off/departure time (THIS IS A HEADER! NO NOT CHANGE!)-->
-        <div style="display: flex; align-items: flex-start;">
-          <div style="width: 15%; height: 5%; margin-top: 3%; margin-left: 0%; color: #9A9EF4; position: relative; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">DEPART</div>
-          <div style="width: 20%; height: 5%; margin-top: 3%; margin-left: 38%; color: #9A9EF4; position: relative; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">TAKE-OFF</div>
-        </div>
-        
-        
-        <!--Location of departure & time of take-off (ARRAY DATA INSERT HERE)-->
-        <div style="display: flex; align-items: flex-start;">
-          <div style="width: 40%; height: 5%; margin-top: 4%; margin-left: 0%;  color: black;   position: relative; font-size: 1.3vw; font-family: Inter; font-weight: 300; word-wrap: break-word">Hong Kong International Airport</div>  
-          <div style="width: 60%; height: 5%; margin-top: 4%; margin-left: 24%; color: #3A4646; position: relative; font-size: 1.3vw; font-family: Offside; font-weight: 400; line-height: 24px; letter-spacing: 0.1%; word-wrap: break-word">23.03.01 2:13 HKT</div>
-        </div>
-        
+          <!--Transportaion type (For example 'flight') & Transport number (ARRAY DATA INSERT HERE)-->
+          <div style="display: flex; align-items: flex-start;">
+            <div style="width: 15%; height: 5%; margin-top: 2%; margin-left: 0%;  color: black;   position: relative; font-size: 1.3vw; font-family: Inter; font-weight: 300; word-wrap: break-word">Flight</div>
+            <div style="width: 70%; height: 5%; margin-top: 2%; margin-left: 45%; color: black;   position: relative; font-size:  1.3vw; font-family: Inter; font-weight: 300; word-wrap: break-word">Flight number: CX 273</div>
+          </div>
 
-        <!--Destination arrival & time or arrival (THIS IS A HEADER! DO NOT CHANGE)-->
-        <div style="display: flex; align-items: flex-start;">
-          <div style="width: 15%; height: 5%; margin-top: 5%;  margin-left: 0%;color: #9A9EF4;  position: relative; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">ARRIVE</div>
-          <div style="width: 20%; height: 5%; margin-top: 5%; margin-left: 38%; color: #9A9EF4; position: relative; font-size:1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">TIME</div>
-        </div>
-        
 
-        <!--Destination arrival & time of arrival (ARRAY DATA INSTER HERE)-->
-        <div style="display: flex; align-items: flex-start;">
-          <div style="width: 40%; height: 5%; margin-top: 6%;  margin-left: 0%; color: black;   position: relative; font-size: 1.3vw; font-family: Inter; font-weight: 300; word-wrap: break-word">Heathrow International Airport</div>
-          <div style="width: 60%; height: 5%; margin-top: 6%; margin-left: 24%; color: #3A4646; position: relative; font-size: 1.3vw; font-family: Offside; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">23.03.01 2:13 HKT</div>
+          <!--Departure location & Take-off/departure time (THIS IS A HEADER! DO NOT CHANGE!)-->
+          <div style="display: flex; align-items: flex-start;">
+            <div style="width: 15%; height: 5%; margin-top: 3%; margin-left: 0%; color: #9A9EF4; position: relative; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">DEPART</div>
+            <div style="width: 20%; height: 5%; margin-top: 3%; margin-left: 38%; color: #9A9EF4; position: relative; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">TAKE-OFF</div>
+          </div>
+
+
+          <!--Location of departure & time of take-off (ARRAY DATA INSERT HERE)-->
+          <div style="display: flex; align-items: flex-start;">
+            <div style="width: 40%; height: 5%; margin-top: 4%; margin-left: 0%;  color: black;   position: relative; font-size: 1.3vw; font-family: Inter; font-weight: 300; word-wrap: break-word">Hong Kong International Airport</div>  
+            <div style="width: 60%; height: 5%; margin-top: 4%; margin-left: 24%; color: #3A4646; position: relative; font-size: 1.3vw; font-family: Offside; font-weight: 400; line-height: 24px; letter-spacing: 0.1%; word-wrap: break-word">23.03.01 2:13 HKT</div>
+          </div>
+
+
+          <!--Destination arrival & time or arrival (THIS IS A HEADER! DO NOT CHANGE)-->
+          <div style="display: flex; align-items: flex-start;">
+            <div style="width: 15%; height: 5%; margin-top: 5%;  margin-left: 0%;color: #9A9EF4;  position: relative; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">ARRIVE</div>
+            <div style="width: 20%; height: 5%; margin-top: 5%; margin-left: 38%; color: #9A9EF4; position: relative; font-size:1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">TIME</div>
+          </div>
+
+
+          <!--Destination arrival & time of arrival (ARRAY DATA INSTER HERE)-->
+          <div style="display: flex; align-items: flex-start;">
+            <div style="width: 40%; height: 5%; margin-top: 6%;  margin-left: 0%; color: black;   position: relative; font-size: 1.3vw; font-family: Inter; font-weight: 300; word-wrap: break-word">Heathrow International Airport</div>
+            <div style="width: 60%; height: 5%; margin-top: 6%; margin-left: 24%; color: #3A4646; position: relative; font-size: 1.3vw; font-family: Offside; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">23.03.01 2:13 HKT</div>
+          </div>
         </div>
+      </div>
+    
       
+      <!--The start of the second section: For hotel booking information-->
+      <h3 id="hotel_info">Hotel booking</h3> <!--See CSS styling on line 79: 'hotel_info'-->
+
+      <!-- Second Rectangle Container for Hotel information -->
+      <div>
+        <div style="margin-bottom: 5%;">  
+          <div style="width: 49%; height: 22%; left: 1%; top: 50%; position: relative; background: #ffffff; padding: 1%;">
+
+            <!--Hotel Booking section: HOTEL & ADDRESS (THIS IS A HEADDER DO NOT CHANGE!)-->
+            <div style="display: flex; align-items: flex-start;">
+              <div style="width: 10%; height: 5%; margin-top: 1%; margin-left: 0%;   color: #9A9EF4; position: relative; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">HOTEL</div>
+              <div style="width: 20%; height: 5%; margin-top: 1%; margin-left: 45%;  color: #9A9EF4; position: relative; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">ADDRESS</div>
+            </div>
+
+            <!--Hotel name here (ARRAY DATA INSERT HERE) -->
+            <div style="width: 70%; height: 5%; margin-top: 2%; margin-left: 0%; color: black;  position: relative; font-size: 1.3vw; font-family: Inter; font-weight: 300; word-wrap: break-word">Sheraton</div>
+
+
+            <!--Check-in information: Hotel Check-in (THIS IS A HEADDER! DO NOT CHANGE)-->
+            <div style="width: 18%; height: 4%; margin-top: 4%; margin-left: 0%; color: #9A9EF4; position: relative; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">CHECK-IN</div>
+
+
+            <!--DATA ARRAY FOR CHECK-IN TIME BELOW-->
+            <div style="margin-top: 5%; margin-left: 0%; color: #3A4646; position: relative; font-size: 1.3vw; font-family: Nunito; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">2024/03/7  14:30</div>
+
+
+            <!--Check-out information: Hotel check-out (THIS IS A HEADER! DO NOT CHANGE!) -->
+            <div style="width: 18%; height: 4%; margin-top: 6%; margin-left: 0%; color: #9A9EF4; position: relative; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">CHECK-OUT</div>
+
+
+            <!--DATA ARRAY FOR CHECK-OUT TIME BELOW-->
+            <div style="margin-top: 7%; margin-left: 0%; color: #3A4646; position: relative; font-size: 1.3vw; font-family: Nunito; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">2024/03/14  12:00</div>
+          </div> 
+        </div>
+      </div>
       
+
+
+
+      <!--The start of the third section: Day activities-->
+      <h3 id="day_activities">Day activities: Day 1</h3> <!--See CSS styling on line 88: 'hotel_info'-->
+
+      <!--Third Rectangle Container for Day activities-->
+      <div style="margin-bottom: 5%;">
+        <div style="width: 49%; height: 22%; left: 1%; top: 90%; position: relative; background: #ffffff; padding: 1%;">
         
+          <!--place 1 & Location (THIS IS A HEADER DO NOT CHANGE!)-->
+          <div style="display: flex; align-items: flex-start;">
+            <div style="width: 20%; height: 5%; margin-top: 1%; margin-left: 0%;   color: #9A9EF4; position: relative; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">PLACE1</div>
+            <div style="width: 20%; height: 5%; margin-top: 1%; margin-left: 35%;  color: #9A9EF4; position: relative; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">LOCATION</div>
+          </div>
+
+          <!--PLACE1 & LOCATION (ARRAY DATA INSERT HERE)-->
+          <div style="display: flex; align-items: flex-start;  color: #3A4646; position: relative; font-size: 1.3vw; font-family: Offside; font-weight: 400; line-height: 24px; letter-spacing: 0.1%; word-wrap: break-word">
+            <div style="width: 40%; height: 5%; margin-top: 4%; margin-left: 0%;  ">place1 info</div>  
+            <div style="width: 60%; height: 5%; margin-top: 4%; margin-left: 24%; ">place1 location</div>
+          </div>
+
+           <!--place 2 & Location (THIS IS A HEADER DO NOT CHANGE!)-->
+           <div style="display: flex; align-items: flex-start;">
+             <div style="width: 20%; height: 5%; margin-top: 5%; margin-left: 0%;   color: #9A9EF4; position: relative; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">PLACE2</div>
+             <div style="width: 20%; height: 5%; margin-top: 5%; margin-left: 35%;  color: #9A9EF4; position: relative; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">LOCATION</div>
+           </div>
+
+           <!--PLACE1 & LOCATION (ARRAY DATA INSERT HERE)-->
+           <div style="display: flex; align-items: flex-start;  color: #3A4646; position: relative; font-size: 1.3vw; font-family: Offside; font-weight: 400; line-height: 24px; letter-spacing: 0.1%; word-wrap: break-word">
+             <div style="width: 40%; height: 5%; margin-top: 6%; margin-left: 0%;  ">place2 info</div>  
+             <div style="width: 60%; height: 5%; margin-top: 6%; margin-left: 24%; ">place2 location</div>
 
 
-       
-  <!-- CURRENTLY IN PROGRESS BELOW:-->
+        <!--I NEED A FUNCTION HERE - IF THE USER FROM 'DAYS_V2/V3.HTML' OR 'ITINERARY.HTML' PAGE DECIDES TO CLONE INTO THE ARRAY THE DATA SHOULD BE ABLE TO DUPLICATE ITSELF HERE-->
 
-      <!--Hotel information section (Styling/Format/Coordination)-->
-  <!--
-      <div style="width: 50%; height: 30%; left: 1%; top: 20%; position: absolute; background: #ffffff; padding: 1%;">
-        <h3 id="hotel_info">Hotel information</h3>
-        <div style="width: 7%; height: 4%; margin-top: 1%; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Hotel </div>
-        <div style="width: 10%; height: 5%; margin-top: 2%; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Sheraton</div>
-        <div style="width: 18%; height: 4%; margin-top: 3%; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Check-in</div>
-        <div style="width: 18%; height: 4%; margin-top: 4%; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Check-out</div>
-        <div style="margin-top: 5%; color: #3A4646; font-size: 12px; font-family: Nunito; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">2024/03/7  14:30</div>
-        <div style="margin-top: 6%; color: #3A4646; font-size: 12px; font-family: Nunito; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">2024/03/14  12:00</div>
-        <div style="width: 10%; height: 4%; margin-top: 7%; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Address</div>
-        <div style="width: 18%; height: 37%; margin-left: 80%; margin-top: -37%; background: rgb(0, 0, 0); border: 0.50px black rgb(255, 255, 255)"></div>
-        <div style="width: 73%; height: 5%; margin-top: 8%; color: black; font-size: 12px; font-family: Inter; font-weight: 300; word-wrap: break-word">Address of hotel</div>
-        <div style="width: 20%; height: 4%; margin-top: 9%; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Name</div>
-        <div style="width: 10%; height: 5%; margin-top: 10%; color: black; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Nick</div>
-        <div style="width: 18%; height: 4%; margin-top: 11%; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Phone No.</div>
-        <div style="width: 22%; height: 4%; margin-top: 12%; color: black; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">+852 5839 6777</div>
-        <div style="width: 7%; height: 4%; margin-top: 13%; color: #9A9EF4; font-size: 12px; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Email</div>
-        <div style="width: 40%; height: 6%; margin-top: 14%; color: #3A4646; font-size: 10px; font-family: Nunito; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">DarcyLi_unicorn_sparkles@gmail.com</div>
+
+        <div style="margin-right: 5%;">
+          <div style="width: 49%; height: 22%; right: 1%; top: 20%; position: relative; background: #ffffff; padding: 1%;">
+
+    <!--This DIV closes the entire page for creating more rectangle containers, if another container is being created, it must be within the div class = page-->    
     </div>
-  -->    
-
-      <!--Day Activities-->
-      <!--
-      <h3 id="day_activities">Day 1</h3>
-      <div class="container", style="left: 1.5%; top: 76%"></div>
-      -->
-  
 
 
     
-    </div>
+
+<!--
+<div style="position: relative; width: 18%; height: 37%; margin-left: 80%; margin-top: -37%; margin-right: x%; background: rgb(0, 0, 0); border: 0.50px black rgb(255, 255, 255)"></div>
+<div style="position: relative; width: 20%; height: 4%; margin-top: 9%; margin-right:  20%; color: #9A9EF4; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Name</div>
+<div style="position: relative; width: 10%; height: 5%; margin-top: 10%; margin-right: 20%; color: black; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Nick</div>
+<div style="position: relative; width: 18%; height: 4%; margin-top: 11%; margin-right: 20%; color: #9A9EF4; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Phone No.</div>
+<div style="position: relative; width: 22%; height: 4%; margin-top: 12%; margin-right: 20%; color: black; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">+852 5839 6777</div>
+<div style="position: relative; width: 7%; height: 4%; margin-top: 13%; margin-right:  20%; color: #9A9EF4; font-size: 1.3vw; font-family: Inter; font-style: italic; font-weight: 900; word-wrap: break-word">Email</div>
+<div style="position: relative; width: 40%; height: 6%; margin-top: 14%; margin-right: 20%; color: #3A4646; font-size: 1.3vw; font-family: Nunito; font-weight: 400; line-height: 24px; letter-spacing: 0.50px; word-wrap: break-word">DarcyLi_unicorn_sparkles@gmail.com</div>
+-->
+
+      
     
 <script src="global.js"></script>
     <script>
@@ -245,6 +313,6 @@
         doc.save('data.pdf');
       }
     </script>
-  </div>
+</div>  <!-- I don'te remember who this <div. belongs to-->
 </body>
 </html>
